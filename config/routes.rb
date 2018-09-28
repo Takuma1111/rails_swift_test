@@ -3,15 +3,20 @@ Rails.application.routes.draw do
 
   # post "chats/:id/destroy" => "chats#destroy"
 
-resources :chat
-
-
   get "post/show/:id" => "post#show"
 
 
   namespace :chat, default: {format: :json} do
    resources :chats
   end
+
+#
+get '/', action: :index, controller: 'chat1'
+
+
+
+
+
 
 
 end
