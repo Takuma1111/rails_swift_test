@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   # post "chats/:id/destroy" => "chats#destroy"
 
-  root 'chat#aaa'
 
   get "post/show/:id" => "post#show"
 
